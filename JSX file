@@ -22,3 +22,4 @@ let a="wasif here ";
 
 
 we can place any html tage like h1,div and under this use {} and just call js 
+we can also use css in it using in place of classname"cssstyle"

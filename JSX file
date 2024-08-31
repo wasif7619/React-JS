@@ -1,0 +1,24 @@
+let a="wasif here ";
+  let b="21-4555";
+  let obj={
+    a:"wasif",
+    b:"naeem"
+  }
+  let arr=[1,2,3,4,5]
+
+<h1>{a}</h1>
+        {
+          arr.map((bc)=>
+          {
+           <div>{bc}</div>
+          })
+        }
+        {
+          <div>{b}</div>
+        }
+        <div>
+          {obj.b}
+        </div>
+
+
+we can place any html tage like h1,div and under this use {} and just call js 

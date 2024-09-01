@@ -1,0 +1,33 @@
+rfc shortcutof creating componet if libary is installed (react,react,7 etc )
+
+function Header()
+{
+    return(
+        <div>
+        <div><h1>this is header of component1</h1></div>
+        <div><h1>this is header of component2</h1></div>
+        <div><h1>this is header of component3</h1></div>
+        </div>
+    )
+}
+function CGPA()
+{
+    return(
+        <div>
+            <div><h2>current is 2.69</h2></div>
+            <div><h2>if i get A in all of summer subjects then its 2.94 inshallah</h2></div>
+        </div>
+    )
+}
+export  {Header,CGPA};
+
+
+
+import {Header,CGPA} from './header.jsx';
+div class="a">
+        <Header/>
+        <Header/>
+        <Header/>
+        </div> 
+        <CGPA/>
+we can also design with help of div assign class and then go to app.css for styling 

@@ -1,2 +1,6 @@
 using bootstrap in reactjs 
 first add in project using "npm i bootstrap"
+
+
+or 
+npm install react-bootstrap bootstrap

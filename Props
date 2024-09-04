@@ -1,0 +1,37 @@
+function App() {
+  let info={
+    email:'abcadsd',
+    name:'wasif'
+  }
+  return (
+    <div className="App">
+     <Header info={info} cname='wasif naeem' />
+    </div>
+  );
+}
+
+export default App;
+
+
+Header.jsx
+
+function Header(props) {
+    // Destructure the `info` prop
+    const { info,cname } = props;
+  
+    return (
+      <div>
+        <p>Email: {info.email}</p>
+        <p>Name: {info.name}</p>
+        <p>Full Name:{cname}</p>
+      </div>
+    );
+  }
+  
+function Footer ()
+{
+    return(
+        <div></div>
+    )
+}
+export {Header,Footer}

@@ -1,0 +1,8 @@
+ <Header go="this is props" phone="03355587857" />
+calling in header.jsx
+function Header (props)
+{
+    return(
+        <div>{props.go}|{props.phone}</div>
+    )
+}

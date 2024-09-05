@@ -1,0 +1,35 @@
+function App() {
+  let details= {
+    name:'wasif',
+    arid:'21',
+    serial:'4555'
+  }
+  return (
+    <div>
+      <Chk details={details}>
+        <h2>this is child props</h2>
+        </Chk>
+</div>
+)
+}
+
+header.jsx
+
+
+function Chk(props,childern)
+{
+    const {details}=props
+    return(
+        <div>
+            <div>
+                <h2>this is about to final check</h2>
+                <div><p>done</p></div>
+                <p>props info given below</p>
+                <p>{details.name}</p>
+                <p>{details.arid}</p>
+                <div>childern</div>
+            </div>
+        </div>
+    )
+}
+export default Chk

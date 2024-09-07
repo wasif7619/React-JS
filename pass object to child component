@@ -1,0 +1,36 @@
+function App() {
+  return (
+    <div>
+      <Container fluid>
+        <Container>
+          <Row>
+            {blog.map((v, i) => {
+              return (
+                <Prod key={i} Ptime={v} />
+              );
+            })}
+          </Row>
+        </Container>
+      </Container>
+    </div>
+  );
+}
+
+export default App;
+
+function Prod({ Ptime }) {
+  return (
+    <Col lg={3} md={6}>
+      <Card>
+        <Card.Img variant="top" src="https://via.placeholder.com/100x180" />
+        <Card.Body>
+          <Card.Title>{Ptime.Title}</Card.Title>
+          <Card.Text>
+            {Ptime.body}
+          </Card.Text>
+          <Button variant="primary">Go somewhere</Button>
+        </Card.Body>
+      </Card>
+    </Col>
+  );
+}

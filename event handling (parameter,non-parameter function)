@@ -1,0 +1,24 @@
+import logo from './logo.svg';
+import './App.css';
+function App() {
+let test=()=>
+{
+  <p>this is a tester of event handeler</p>
+  let b=prompt("enter a number to test it")
+  const parsedNumber = parseInt(b, 10); 
+  console.log(parsedNumber)
+}
+let parameter=(a,b)=>
+{
+   alert(a)
+   alert(b)
+}
+  return (
+    <div className="App">
+     <button onClick={test}>Check</button>
+     <button onClick={()=>{parameter(45,55)}}>parameter check</button>
+    </div>
+  );
+}
+
+export default App;

@@ -1,0 +1,28 @@
+import logo from './logo.svg';
+import './App.css';
+import { useState } from 'react';
+
+function App() {
+  let temp = '';
+  let [pshow, setPShow] = useState(false);
+
+  if (pshow) {
+    temp = (
+      <>
+        <button onClick={() => setPShow(false)}>Hide</button>
+        <p>Wasif here</p>
+      </>
+    );
+  }
+  else {
+    temp = <button className='bg-red p-4' onClick={() => setPShow(true)}>Show</button>;
+  }
+
+  return (
+    <div>
+      {temp}
+    </div>
+  );
+}
+
+export default App;
